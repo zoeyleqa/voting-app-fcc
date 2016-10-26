@@ -3,25 +3,49 @@
 <html>
 
 	<head>
-		<title>Clementine.js - The elegant and lightweight full stack JavaScript boilerplate.</title>
-		
+		<title>Poll</title>
 		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	</head>
 
+	<header>
+		<div class="container-fluid main-header">
+				<img src="/public/img/poll.png" />
+		</div>	
+	</header>
 	<body>
-		<div class="container">	
+		<br>
+		<div class="container-fluid body-shade">
+			
+			<div class="col-md-8 offset-md-2 body-shade">
 			<div class="login">
-				<img src="/public/img/clementine_150.png" />
+				
 				<br />
-				<p class="clementine-text">Clementine.js</p>
+				<br>
+				<!--<p class="clementine-text">Clementine.js</p>-->
 				<a href="/auth/github">
 					<div class="btn" id="login-btn">
 						<img src="/public/img/github_32px.png" alt="github logo" />
 						<p>LOGIN WITH GITHUB</p>
 					</div>
 				</a>
+				<br><br>
+				<a href="/auth/facebook">
+					<div class="btn" id="login-btn">
+						<img src="/public/img/github_32px.png" alt="github logo" />
+						<p>LOGIN WITH FACEBOOK</p>
+					</div>
+				</a>
 			</div>
+			<br><br>
+			<footer>
+			<hr>
+			Made by Zoey Le
+			</footer>
+			</div>
+			
 		</div>
 	</body>
+	
 
 </html>

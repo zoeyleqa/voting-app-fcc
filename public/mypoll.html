@@ -3,10 +3,10 @@
 <html>
 
 	<head>
-		<title>Poll | Voting App</title>
+		<title>Voting App</title>
+		
 		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 	</head>
 
 	<header >
@@ -25,17 +25,24 @@
 		</div>
 		</div>
 	</div>
+	<br />
+			<p class="clementine-text">My Poll</p>
 	</header>
 
 	<body>
-		<br>
 		<div class="container-fluid">
 		
 			<div class="col-md-8 offset-md-2 body-shade">
-			<div class="btn-container">
-				<br><br>
-				<a href="/newpoll" class="btn btn-default">New Poll</a>
-				<a href="/mypoll" class="btn btn-default">My Poll</a>
+				<div class="btn-container">
+				<br><br><br />
+				<table class="table table-striped">
+					<thead>
+					
+					</thead>	
+					<tbody id="qstnLst">
+						
+					</tbody>
+				</table>
 			</div>
 		
 			<br><br>
@@ -45,7 +52,10 @@
 			</footer>
 			</div>
 		</div>
+		
+
 		<script type="text/javascript" src="common/ajax-functions.js"></script>
+		<script type="text/javascript" src="controllers/myPollCtrl.client.js"></script>
 		<script type="text/javascript" src="controllers/userController.client.js"></script>
 	</body>
 

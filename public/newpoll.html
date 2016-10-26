@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>New Poll</title>
+		
+		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+
+	<header>
+<!-- 		<div class="main-header"> -->
+		<div>
+			<p align="right">Welcome, <span id="display-name"></span>!
+			<a class="menu" href="/profile">Profile</a>
+			|
+			<a class="menu" href="/logout">Logout</a>
+			</p>
+		</div>
+		
+		<div>
+				<div class="logo-box">
+					<!--<h1>poll</h1>	-->
+					<!--<div class="img-left"></div>-->
+					<img src="/public/img/poll.png" class="logo-left"/>	
+				</div>
+				<div class="title-box">
+  					<h1 class="title">New Poll</h1>
+  						
+				</div>
+		</div>
+	</header>
+
+	<body>
+		<br><br><br>
+		<div class="container-fluid">
+			<div class="col-md-6 col-md-offset-3 body-shade">
+				<form id="formdata" action="" method="post">
+				<label for="question">Question</label>
+				<input type="text" max-width="100" name="question"/>
+				</br>
+				<div class = "opt-sect">
+					<label for="opt">Option:</label>
+					<input type="text" name="opt"/>
+					</br>
+					<label for="opt">Option:</label>
+					<input type="text" name="opt"/>
+				</div>
+				 
+				<button type="button" class="btn btn-add">+</button>
+				<br>
+				<br>
+				<!--long button-->
+				<input type="submit" class="btn" name="Post"/>
+				</form>
+			<footer>
+			<hr>
+			Made by Zoey Le
+			</footer>
+			</div>
+		</div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="controllers/newPoll.client.js"></script>
+		<script type="text/javascript" src="common/ajax-functions.js"></script>
+		<script type="text/javascript" src="controllers/userController.client.js"></script>
+	</body>
+
+</html>

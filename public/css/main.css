@@ -1,35 +1,103 @@
 /********* Fonts **********/
 
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url('../fonts/Roboto-Regular.ttf') format('truetype');
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Roboto"), local("Roboto-Regular"),
+		url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/Roboto-Medium.ttf') format('truetype');
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	src: local("Roboto Medium"), local("Roboto-Medium"),
+		url("../fonts/Roboto-Medium.ttf") format("truetype");
 }
 
+@font-face {
+	font-family: "Typo3";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Typo3"), local("Typo3-Regular"),
+		url("../fonts/Typo3-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Typo3";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Typo3 Medium"), local("Typo3-Medium"),
+		url("../fonts/Typo3-Medium.ttf") format("truetype");
+}
 /****** Main Styling ******/
+.main-header {
+	background-color: #7e8498; /*#7083c2;*/
+}
+.temp {
+	background-color: #b35d5c;
+}
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
 }
 
 header {
-	color: #00BCD4;
-	height: 56px;
-	margin: 0 0 14px 0;
-	text-align: center;
+	margin-top: -16px;
 }
 
+.header-right {
+	/*height: 56px;*/
+	margin: 0 0 14px 0;
+	text-align: right;
+	/*float: right;*/
+}
+
+.logo {
+	float: center;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo-box {
+	background: #7e8498;
+	/*-webkit-clip-path: polygon(0 0, 20% 0, 10% 100%, 0% 100%);*/
+	-webkit-clip-path: polygon(0 0, 450px 0, 250px 100%, 0% 100%);
+}
+
+.logo-left{
+	margin-left: 20px;
+}
+
+.title-box {
+	position: relative;
+	background: #7e8498;
+	margin-top: -100px;
+	height: 250px;
+	text-align: center;
+	color: white;
+  	-webkit-clip-path: polygon(500px 0, 100% 0%, 100% 100%, 250px 100%);
+}
+.title {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 70%;
+    margin: auto; 
+    font-size: 150px;
+    font-weight: 600;
+    font-family:  'Typo3-Medium';
+}
+	
 p {
 	margin: 8px 0 0 0;
 }
@@ -57,18 +125,18 @@ header p {
 }
 
 .menu:hover {
-	color: #FFA000;
+	color: #ffa000;
 }
 
 .menu:active {
-	color: #FF630D;
+	color: #ff630d;
 }
 
 header a ~ p {
 	margin: 0;
 	padding: 0;
 	display: inline;
-	color: #ECEFF1;
+	color: #eceff1;
 }
 
 #display-name {
@@ -83,7 +151,7 @@ header a ~ p {
 }
 
 #login-btn {
-	width: 225px;
+	width: 250px;
 	padding: 7px 5px;
 }
 
@@ -94,7 +162,7 @@ header a ~ p {
 
 .btn > img {
 	float: left;
-	margin-left: 10px
+	margin-left: 10px;
 }
 
 /****** Logo Div Styling ******/
@@ -104,25 +172,28 @@ img {
 	display: block;
 }
 
-.clementine-text { /* Styling for the Clementine.js text */
+.clementine-text {
+	/* Styling for the Clementine.js text */
 	padding: 0;
 	margin: -25px 0 0 0;
 	font-weight: 500;
 	font-size: 60px;
-	color: #FFA000;
+	color: #ffa000;
 }
 
 /****** Click Styling ******/
 
-.btn-container {	/* Styling for the div that contains the buttons */
+.btn-container {
+	/* Styling for the div that contains the buttons */
 	margin: -10px auto 0 auto;
 	text-align: center;
 }
 
-.btn {	/* Styling for buttons */
+.btn {
+	/* Styling for buttons */
 	margin: 0 8px;
 	color: white;
-	background-color: #00BCD4;
+	background-color: #00bcd4;
 	display: inline-block;
 	border: 0;
 	font-size: 14px;
@@ -132,24 +203,24 @@ img {
 	font-weight: 500;
 }
 
-.btn:focus {	/* Remove outline when hovering over button */
+.btn:focus {
+	/* Remove outline when hovering over button */
 	outline: none;
 }
 
-.btn:active {	/* Scale the button down by 10% when clicking on button */
+.btn:active {
+	/* Scale the button down by 10% when clicking on button */
 	transform: scale(0.9, 0.9);
 	-webkit-transform: scale(0.9, 0.9);
 	-moz-transform: scale(0.9, 0.9);
 }
 
-.btn-delete {	/* Styling for delete button */
-	background-color: #ECEFF1;
+.btn-delete {
+	/* Styling for delete button */
+	background-color: #eceff1;
 	color: #212121;
 }
 
-#click-nbr {
-	font-weight: 400;
-}
 
 /****** Profile Styling ******/
 
@@ -158,7 +229,7 @@ img {
 	height: 200px;
 	border-radius: 3px;
 	margin: 86px auto 0 auto;
-	background-color: #EEE;
+	background-color: #eee;
 	text-align: center;
 	color: #000;
 }
@@ -168,7 +239,7 @@ img {
 }
 
 .github-profile p:nth-child(5) {
-	margin-bottom: 16px
+	margin-bottom: 16px;
 }
 
 .github-profile p {
@@ -190,15 +261,30 @@ span {
 }
 
 .github-profile .menu:hover {
-	color: #FFA000;
+	color: #ffa000;
 }
 
 .github-profile .menu:active {
-	color: #FF630D;
+	color: #ff630d;
 }
 
 #menu-divide {
-	color: #FFFFFF;
+	color: #ffffff;
 	display: inline;
 	margin: 0;
+}
+
+footer {
+	bottom: 0;
+	height: 60px;
+	margin-top: 40px;
+	text-align: center;
+	font-size: 20px;
+	font-family: "Lato";
+}
+
+.body-shade {
+	box-shadow: 12px -12px 10px -4px lightgrey, -12px 10px 10px -4px lightgrey,
+		12px 0 15px -4px lightgrey, -12px 0 15px -4px lightgrey;
+	background: white;
 }
