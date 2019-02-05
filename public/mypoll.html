@@ -3,36 +3,36 @@
 <html>
 
 	<head>
-		<title>Voting App</title>
+		<title>My Poll</title>
 		
 		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	</head>
 
 	<header >
-	<div class="main-header">
 		<div>
 			<p align="right">Welcome, <span id="display-name"></span>!
 			<a class="menu" href="/profile">Profile</a>
 			|
 			<a class="menu" href="/logout">Logout</a>
 			</p>
-		</div>		
-		<div class="container-fluid">
+		</div>
 		
-		<div class="row logo">
-			<img src="/public/img/poll.png" />
+		<div>
+			<div class="logo-box">
+				<a href="/"><img src="/public/img/poll.png" class="logo-left"/></a>
+			</div>
+			<div class="title-box">
+  				<h1 class="title">My Poll</h1>
+			</div>
 		</div>
-		</div>
-	</div>
-	<br />
-			<p class="clementine-text">My Poll</p>
 	</header>
 
 	<body>
+		<br><br><br>
 		<div class="container-fluid">
 		
-			<div class="col-md-8 offset-md-2 body-shade">
+			<div class="col-md-8 offset-md-2">
 				<div class="btn-container">
 				<br><br><br />
 				<table class="table table-striped">
@@ -45,7 +45,6 @@
 				</table>
 			</div>
 		
-			<br><br>
 			<footer>
 			<hr>
 			Made by Zoey Le
@@ -54,9 +53,9 @@
 		</div>
 		
 
-		<script type="text/javascript" src="common/ajax-functions.js"></script>
-		<script type="text/javascript" src="controllers/myPollCtrl.client.js"></script>
-		<script type="text/javascript" src="controllers/userController.client.js"></script>
+		<script type="text/javascript" src="/common/ajax-functions.js"></script>
+		<script type="text/javascript" src="/controllers/myPollCtrl.client.js"></script>
+		<script type="text/javascript" src="/controllers/userController.client.js"></script>
 	</body>
 
 </html>

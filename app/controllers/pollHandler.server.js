@@ -55,7 +55,7 @@ function pollHandler () {
 				// console.log(question);
 				// arr.push(question);
 				// });
-				console.log(result.github.pollList);
+				// console.log(result.github.pollList);
 				res.json(result);
 			}); 
 	};
@@ -97,21 +97,21 @@ function pollHandler () {
 
 	
 	this.delPoll = function (req, res) {
-		console.log(req.body.id);
+		// console.log(req.body.id);
 		Users
 			.findOneAndUpdate({ 'github.id': req.user.github.id }, 
 			{ $pull: { 'github.pollList' : {id: req.body.id}}},
 			{new:true})
 			.exec(function (err, result) {
 					if (err) { throw err; }
-					console.log('user');
-					console.log(result.github.pollList);
+					// console.log('user');
+					// console.log(result.github.pollList);
 			
 			Polls.findOneAndRemove({'id' : req.body.id}, function(err, result){
 					if (err) { throw err }
 					
-					console.log('poll');
-					console.log(result);
+					// console.log('poll');
+					// console.log(result);
 					res.json(result);
 				});
 				

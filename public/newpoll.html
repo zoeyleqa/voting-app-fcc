@@ -20,39 +20,44 @@
 		</div>
 		
 		<div>
-				<div class="logo-box">
-					<!--<h1>poll</h1>	-->
-					<!--<div class="img-left"></div>-->
-					<img src="/public/img/poll.png" class="logo-left"/>	
-				</div>
-				<div class="title-box">
-  					<h1 class="title">New Poll</h1>
-  						
-				</div>
+			<div class="logo-box">
+				<a href="/"><img src="/public/img/poll.png" class="logo-left"/></a>
+			</div>
+			<div class="title-box">
+  				<h1 class="title">New Poll</h1>
+			</div>
 		</div>
 	</header>
 
 	<body>
 		<br><br><br>
 		<div class="container-fluid">
-			<div class="col-md-6 col-md-offset-3 body-shade">
+			<div class="col-md-6 col-md-offset-3 ">
 				<form id="formdata" action="" method="post">
-				<label for="question">Question</label>
-				<input type="text" max-width="100" name="question"/>
+					<table class="opt-sect" width="100%">
+					<col width="40">
+					<col>
+					<tr>
+						<td><p id="question">Question&nbsp&nbsp</p></td>
+						<td><input style="width:100%; display:block;" type="text" name="question"/></td>
+					</tr>
 				</br>
-				<div class = "opt-sect">
-					<label for="opt">Option:</label>
-					<input type="text" name="opt"/>
+					<tr>
+						<td><p>Option</p></td>
+						<td><input style="width:100%; display:block;" type="text" name="opt"/></td>
+					</tr>
 					</br>
-					<label for="opt">Option:</label>
-					<input type="text" name="opt"/>
-				</div>
-				 
-				<button type="button" class="btn btn-add">+</button>
+					<tr>
+						<td><p>Option</p></td>
+						<td><input style="width:100%; display:block;" type="text" name="opt"/></td>
+					</tr>
+
+				 </table>
+				<input type="button" class="btn btn-add" value="+ Option">
 				<br>
 				<br>
 				<!--long button-->
-				<input type="submit" class="btn" name="Post"/>
+				<input type="submit" class="btn btn-submit" name="Post"/>
 				</form>
 			<footer>
 			<hr>
@@ -63,9 +68,9 @@
 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script type="text/javascript" src="controllers/newPoll.client.js"></script>
-		<script type="text/javascript" src="common/ajax-functions.js"></script>
-		<script type="text/javascript" src="controllers/userController.client.js"></script>
+		<script type="text/javascript" src="/controllers/newPoll.client.js"></script>
+		<script type="text/javascript" src="/common/ajax-functions.js"></script>
+		<script type="text/javascript" src="/controllers/userController.client.js"></script>
 	</body>
 
 </html>

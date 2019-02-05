@@ -35,7 +35,7 @@
          row.insertCell(-1).appendChild(temp);
          
          var delbtn = document.createElement("BUTTON");
-         delbtn.setAttribute('class', 'delbtn');
+         delbtn.setAttribute('class', 'btn btn-danger delbtn');
          delbtn.setAttribute('id', element.id);
          delbtn.innerHTML = "delete";
          row.insertCell(-1).appendChild(delbtn);
@@ -54,7 +54,7 @@
             }, false);
          });
          } else {
-            table.appendChild(document.createTextNode("Nope, you got no poll."));
+            table.appendChild(document.createTextNode("Nope, you have no poll."));
          }
          
       }

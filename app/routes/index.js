@@ -92,7 +92,7 @@ module.exports = function(app, passport) {
 		});
 	// .post(pollHandler.addVote);
 
-	//api for voteface page		
+	//api for vote page		
 	app.route('/api/:id/vote/:pid')
 		.get(pollHandler.getVote) //get number of votes to show result after voting
 		.post(pollHandler.addVote); //add vote

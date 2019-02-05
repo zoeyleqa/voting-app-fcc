@@ -77,7 +77,7 @@
          temp.setAttribute('name' , 'opt');
          temp.setAttribute('value' , element.opt);
          temp.innerHTML = element.opt;
-         temp.setAttribute('class' , 'btn-vote');
+         temp.setAttribute('class' , 'btn btn-default btn-vote');
          optsect.appendChild(temp);
       });
       

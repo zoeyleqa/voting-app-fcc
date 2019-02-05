@@ -32,8 +32,12 @@
 		url("../fonts/Typo3-Medium.ttf") format("truetype");
 }
 /****** Main Styling ******/
+:root {
+  	--main-bg-color: #416A88; /*3E447B;*/
+}
+
 .main-header {
-	background-color: #7e8498; /*#7083c2;*/
+	background-color: var(--main-bg-color); /*#7083c2;*/
 }
 .temp {
 	background-color: #b35d5c;
@@ -66,7 +70,7 @@ header {
 }
 
 .logo-box {
-	background: #7e8498;
+	background: var(--main-bg-color);
 	/*-webkit-clip-path: polygon(0 0, 20% 0, 10% 100%, 0% 100%);*/
 	-webkit-clip-path: polygon(0 0, 450px 0, 250px 100%, 0% 100%);
 }
@@ -77,27 +81,45 @@ header {
 
 .title-box {
 	position: relative;
-	background: #7e8498;
+	background: var(--main-bg-color);
 	margin-top: -100px;
 	height: 250px;
 	text-align: center;
 	color: white;
   	-webkit-clip-path: polygon(500px 0, 100% 0%, 100% 100%, 250px 100%);
 }
+
 .title {
     position: absolute;
+    /*float: right;*/
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 70%;
+    width: 55%;
     height: 70%;
-    margin: auto; 
+    margin: auto;
+    margin-left: 500px;
     font-size: 150px;
     font-weight: 600;
     font-family:  'Typo3-Medium';
 }
-	
+
+.opt-sect p {
+	font-size: 30px;
+	font-weight: 80px;
+}
+
+.optsect {
+	text-align: center;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
 p {
 	margin: 8px 0 0 0;
 }
@@ -111,25 +133,28 @@ p {
 
 header p {
 	margin: 16px 0 5px 0;
+	font-weight: 50px;
+	font-size: 20px;
+	color: black;
 }
 
 .menu {
 	text-decoration: none;
 	padding: 6px;
 	margin: 0;
-	color: #727272;
+	color: white;
 }
 
 .menu:visited {
-	color: #727272;
+	color: grey;
 }
 
 .menu:hover {
-	color: #ffa000;
+	color: grey;
 }
 
 .menu:active {
-	color: #ff630d;
+	color: white;
 }
 
 header a ~ p {
@@ -146,7 +171,7 @@ header a ~ p {
 /****** Login Styling ******/
 
 .login {
-	margin: 86px auto 0 auto;
+	margin: 10px auto 0 auto;
 	text-align: center;
 }
 
@@ -161,10 +186,29 @@ header a ~ p {
 }
 
 .btn > img {
-	float: left;
+	float: leftbtn
 	margin-left: 10px;
 }
 
+.btn-submit {
+	float: right;
+}
+
+input[type="text"]{ 
+	padding: 10px 10px; 
+	line-height: 10px;
+	font-size: 20px;
+	width:95%;
+	/*display:block;*/
+}
+
+.btn-add { 
+	padding: 1px 1px 1px 1px ; 
+	line-height: 30px; 
+	display:block;
+	font-size: 20px;
+	
+}
 /****** Logo Div Styling ******/
 
 img {
@@ -189,17 +233,28 @@ img {
 	text-align: center;
 }
 
+.btn-copy {
+	margin: 0 8px;
+	color: white;
+	background-color: var(--main-bg-color);
+	display: inline-block;
+	border: 0;
+	font-size: 15px;
+	text-align: center;
+	border-radius: 3px;
+	padding: 10px;
+}
 .btn {
 	/* Styling for buttons */
 	margin: 0 8px;
 	color: white;
-	background-color: #00bcd4;
+	background-color: var(--main-bg-color);
 	display: inline-block;
 	border: 0;
 	font-size: 14px;
 	border-radius: 3px;
-	padding: 10px 5px;
-	width: 100px;
+	padding: 10px 15px;
+	/*width: 100px;*/
 	font-weight: 500;
 }
 
@@ -221,7 +276,36 @@ img {
 	color: #212121;
 }
 
+.canvasContainer {
+	height: 330px;
+	width: 300px;
+	position: relative;
+	margin: auto;
+}
 
+/*.question {*/
+/*	display: inline-block;*/
+/*    margin: 10px 10px 0 0;*/
+/*    padding: 20px 10px;*/
+/*	font-size: xx-large;*/
+/*	font-weight: bolder;*/
+/*}*/
+
+.questionText{
+	overflow: hidden; 
+    text-align: center;
+    font-size: xx-large
+    
+	/*padding: 20px 0 20px 0;*/
+}
+
+/*#myChart {*/
+/*	height: 150px;*/
+/*	width: 300px;*/
+/*	position: relative;*/
+/*	left: 65%;*/
+/*	top: 25%;*/
+/* }*/
 /****** Profile Styling ******/
 
 .github-profile {
@@ -287,4 +371,5 @@ footer {
 	box-shadow: 12px -12px 10px -4px lightgrey, -12px 10px 10px -4px lightgrey,
 		12px 0 15px -4px lightgrey, -12px 0 15px -4px lightgrey;
 	background: white;
+	
 }

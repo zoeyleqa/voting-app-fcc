@@ -11,15 +11,15 @@ $(document).ready(function() {
         e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-            $(wrapper).append('<div><label for="opt">Option:&nbsp</label>'
-            +'<input type="text" name="opt"/>&nbsp&nbsp' 
-            +'<a href="#" class="remove_field">x</a></div>'); //add input box
+            $(wrapper).append('<tr><td><p>Option</p></td>'
+            +'<td  style="width:100%; display:block;" ><input type="text" name="opt"/>&nbsp&nbsp' 
+            +'<a href="#" class="remove_field">x</a></td></tr>'); //add input box
         }
     });
     
     $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
         e.preventDefault(); 
-        $(this).parent('div').remove(); 
+        $(this).parent('td').parent('tr').remove(); 
         x--;
     });
     
