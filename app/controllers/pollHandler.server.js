@@ -2,7 +2,7 @@
 
 var Users = require('../models/users.js');
 var Polls = require('../models/poll.js');
-var shortid = require('short-id');
+var shortid = require('shortid');
 
 function pollHandler () {
 	
