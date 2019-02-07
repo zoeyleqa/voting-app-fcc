@@ -10,7 +10,7 @@ var bodyparser = require("body-parser");
 
 var app = express();
 require('dotenv').load();
-require('dotenv').config({process.env.HOME + '/.env'});
+// require('dotenv').config({process.env.HOME + '/.env'});
 require('./app/config/passport')(passport);
 
 mongoose.connect(process.env.MONGO_URI);
