@@ -5,7 +5,9 @@ Live website: https://poll-zle.herokuapp.com/
 ---------------------
 
 ## Overview
-This is a voting app that was built upon [Clementine.js boilerplate](http://www.clementinejs.com/). Clementine.js is a lightweight boilerplate for fullstack JavaScript development which utilizes MongoDB, Express and Node.js. It also includes GitHub authentication using [Passport](http://passportjs.org/). For simplication purposes, only client's Github account is used as an account of this page.
+This is a fullstack web application utilizing MongoDB, Express and Node with [Passport.js](http://passportjs.org/) for authentication. It lets user create/delete polls, share to get voting count and show the user its aggregate results with pie chart visualization (Chart.js).
+
+It was built upon [Clementine.js boilerplate](http://www.clementinejs.com/). For simplication purposes, only client's Github account is used as an authentication account of this page.
 
 
 ## User stories:
