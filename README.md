@@ -9,7 +9,6 @@ This is a fullstack web application utilizing MongoDB, Express and Node with [Pa
 
 It was built upon [Clementine.js boilerplate](http://www.clementinejs.com/). For simplication purposes, only client's Github account is used as an authentication account of this page.
 
-
 ## User stories:
 * As an authenticated user, I can keep my polls and come back later to access them.
 * As an authenticated user, I can share my polls with my friends.
@@ -19,6 +18,20 @@ It was built upon [Clementine.js boilerplate](http://www.clementinejs.com/). For
 * As an unauthenticated or authenticated user, I can see and vote on everyone's polls.
 * As an unauthenticated or authenticated user, I can see the results of polls in chart form. (This could be implemented using Chart.js or Google Charts.)
 * As an authenticated user, if I don't like the options on a poll, I can create a new option.
+
+## Quick Demo
+
+Signing in with a github account, the user can create, delete, and share polls. The user has 2 choices: new poll and my poll. New poll page lets the user create new poll. My poll page lets the user manage their polls and see polls' aggregate results.
+
+<p align="center">
+  <img src="pictures/userdemo.gif">  
+</p>
+
+Anyone can vote then see the poll's result by following the share link without authentication. This following demo proves that by using incognito mode on Chrome.
+
+<p align="center">
+  <img src="pictures/votingdemo.gif">  
+</p>
 
 ## Utilization
 | Name          | Use           |  
