@@ -1,8 +1,6 @@
 # Voting App 
 
----------------------
-Live website: https://poll-zle.herokuapp.com/
----------------------
+
 
 ## Overview
 This is a fullstack web application utilizing MongoDB, Express and Node with [Passport.js](http://passportjs.org/) for authentication. It lets user create/delete polls, share to get voting count and show the user its aggregate results with pie chart visualization (Chart.js).
